@@ -147,4 +147,17 @@ INFO:root:rank=7 pagerank=6.8115e-02 url=www.lawfareblog.com/chinatalk-dispatche
 INFO:root:rank=8 pagerank=6.4847e-02 url=www.lawfareblog.com/us-moves-dismiss-case-against-company-linked-ira-troll-farm
 INFO:root:rank=9 pagerank=6.4847e-02 url=www.lawfareblog.com/livestream-house-armed-services-committee-holds-hearing-priorities-missile-defense
 ```
+~articles that are about biden but do not mention biden
+```
+python3 pagerank.py --data=./lawfareblog.csv.gz --filter_ratio=0.2 --personalization_vector_query='biden' --search_query='-biden'
+INFO:root:rank=0 pagerank=5.0379e-02 url=www.lawfareblog.com/2018-case-supplement-computer-crime-law-4th-edition
+INFO:root:rank=1 pagerank=4.2064e-02 url=www.lawfareblog.com/robert-mueller-speaks
+INFO:root:rank=2 pagerank=4.2064e-02 url=www.lawfareblog.com/announcing-9th-national-security-law-workshop
+INFO:root:rank=3 pagerank=4.2064e-02 url=www.lawfareblog.com/announcing-10th-national-security-law-workshop
+INFO:root:rank=4 pagerank=4.2064e-02 url=www.lawfareblog.com/christmas-trenches-2018
+INFO:root:rank=5 pagerank=3.6634e-02 url=www.lawfareblog.com/trump-asks-supreme-court-stay-congressional-subpeona-tax-returns
+INFO:root:rank=6 pagerank=2.7770e-02 url=www.lawfareblog.com/how-declare-war-anno-domini-1429-1
+INFO:root:rank=7 pagerank=2.6817e-02 url=www.lawfareblog.com/security-book-event-oct-9-john-mearsheimers-great-delusion
+INFO:root:rank=8 pagerank=2.3546e-02 url=www.lawfareblog.com/achieving-and-maintaining-cyberspace-superiority-cyber-command-and-interagency-legal-conference
+```
 
